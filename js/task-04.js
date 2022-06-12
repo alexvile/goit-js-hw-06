@@ -7,7 +7,7 @@ let counterValue = 0;
 
 const onIncrementBtnClick = event => {
     counterValue += 1;
-    console.log(counterValue);
+    // console.log(counterValue);
     valueEl.textContent = counterValue;
 
 };
@@ -17,7 +17,7 @@ incrementBtn.addEventListener('click', onIncrementBtnClick);
 
 const onDecrementBtnClick = event => {
     counterValue -= 1;
-    console.log(counterValue);
+    // console.log(counterValue);
     valueEl.textContent = counterValue;
 };
 
