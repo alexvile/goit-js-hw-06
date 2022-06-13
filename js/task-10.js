@@ -23,9 +23,14 @@ let elements = [];
 
 let parameter = 20;
 
-function onCreateClick() {
 
-  for (let i = 0; i < quantity; i += 1) {
+function onCreateClick() {
+  createBoxes(quantity);
+}
+
+function createBoxes(amount) {
+
+  for (let i = 0; i < amount; i += 1) {
     parameter += 10;
     
   const boxEl = document.createElement('div');
@@ -44,6 +49,10 @@ function onCreateClick() {
 }
 
 function onDestroyClick() {
+  destroyBoxes();
+}
+
+function destroyBoxes() {
   boxesEl.innerHTML = '';
   // quantity = 0;
   elements = [];
